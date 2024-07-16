@@ -31,6 +31,8 @@
             dataGridView1 = new DataGridView();
             textBox1 = new TextBox();
             button1 = new Button();
+            button2 = new Button();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -61,11 +63,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(78, 399);
+            button2.Name = "button2";
+            button2.Size = new Size(188, 58);
+            button2.TabIndex = 3;
+            button2.Text = "get all";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1197, 749);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(dataGridView1);
@@ -81,5 +94,7 @@
         private DataGridView dataGridView1;
         private TextBox textBox1;
         private Button button1;
+        private Button button2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
